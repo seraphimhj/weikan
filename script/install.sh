@@ -5,9 +5,11 @@
 
 # Install plugins
 echo "Begin install wordpress plugins"
-PLUGIN_DIR="wp/wp-content/plugins"
+PLUGIN_DIR="content/plugins"
  
-for plugin in "all-in-one-seo-pack" "google-sitemap-generator" "google-sitemap-generator" "feedwordpress" "simple-page-ordering" "secure-wordpress" "hierarchy" "image-widget" "wp-super-cache" "register-plus-redux" "regenerate-thumbnails" "taxonomy-taxi" "custom-post-type-ui" "wordpress-importer" "password-protect-wordpress" "wp-quick-pages" "simple-page-ordering" 
+plugins="all-in-one-seo-pack google-sitemap-generator feedwordpress simple-page-ordering secure-wordpress hierarchy image-widget wp-super-cache register-plus-redux regenerate-thumbnails taxonomy-taxi custom-post-type-ui wordpress-importer password-protect-wordpress wp-quick-pages simple-page-ordering woocommerce alipay-for-woocommerce" 
+
+for plugin in ${plugins}
 do
     echo "Fetching ${plugin}...";
     wget --quiet http://downloads.wordpress.org/plugin/${plugin}.zip;
