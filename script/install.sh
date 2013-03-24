@@ -7,7 +7,7 @@
 echo "Begin install wordpress plugins"
 PLUGIN_DIR="content/plugins"
  
-plugins="all-in-one-seo-pack google-sitemap-generator feedwordpress simple-page-ordering secure-wordpress hierarchy image-widget wp-super-cache register-plus-redux regenerate-thumbnails taxonomy-taxi custom-post-type-ui wordpress-importer password-protect-wordpress wp-quick-pages simple-page-ordering woocommerce alipay-for-woocommerce" 
+plugins="all-in-one-seo-pack google-sitemap-generator feedwordpress simple-page-ordering secure-wordpress hierarchy image-widget wp-super-cache register-plus-redux regenerate-thumbnails taxonomy-taxi custom-post-type-ui wordpress-importer password-protect-wordpress wp-quick-pages woocommerce alipay-for-woocommerce paid-memberships-pro everpress" 
 
 for plugin in ${plugins}
 do
